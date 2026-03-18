@@ -62,4 +62,4 @@ This project highlights the difference between **uninformed search** and **heuri
 
 ```bash
 pip install pygame
-python main.py
+python game.py
