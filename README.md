@@ -1,41 +1,65 @@
-# pac-man-pathfinding-simulation
-Pac-Man simulation using BFS &amp; A* pathfinding with Manhattan heuristic, achieving efficient navigation and real-time gameplay in Pygame.
-🎮 Pac-Man Pathfinding Simulation (BFS & A*)
+# 🎮 Pac-Man Pathfinding Simulation (BFS & A*)
 
-A grid-based Pac-Man simulation demonstrating real-time pathfinding using Breadth-First Search (BFS) and A* algorithms. The project compares uninformed and heuristic-based search to highlight efficiency improvements in navigation.
+A **grid-based Pac-Man simulation** showcasing real-time pathfinding using **Breadth-First Search (BFS)** and **A\*** algorithms.  
+This project highlights the difference between **uninformed search** and **heuristic-based optimization** in navigation.
 
-🚀 Features
+---
 
-Implemented BFS and A* for shortest path computation
+## 🖼️ Demo Preview
 
-Used Manhattan Distance heuristic to optimize A*
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/73cd5c2e-2ee2-4170-bef5-55e53af28a4f" width="300"/>
+  <img src="https://github.com/user-attachments/assets/e82b1f48-e076-47cf-bc90-a3f6f8a5d3b1" width="300"/>
+</p>
 
-Achieved ~60% reduction in node exploration compared to BFS
+---
 
-Real-time movement in a grid-based environment
+## 🚀 Features
 
-Smooth gameplay using Pygame (~60 FPS)
+✨ Real-time Pac-Man movement in a grid environment  
+✨ Dual pathfinding implementation: **BFS & A\***  
+✨ Heuristic optimization using **Manhattan Distance**  
+✨ Smooth gameplay with ~**60 FPS** using Pygame  
+✨ Dynamic navigation toward nearest targets (pellets)  
 
-🧠 Algorithms Used
+---
 
-BFS (Breadth-First Search): Guarantees shortest path but explores more nodes
+## 🧠 Algorithms Used
 
-A* Search: Uses heuristic to reduce search space and improve efficiency
+### 🔹 Breadth-First Search (BFS)
+- Guarantees **shortest path**
+- Explores all nodes uniformly
+- Higher computational cost
 
-🛠️ Tech Stack
+### 🔹 A* Search
+- Uses **heuristic (Manhattan Distance)**
+- Reduces unnecessary exploration
+- More efficient than BFS in grid navigation
 
-Python
+---
 
-Pygame
+## ⚡ Performance Insight
 
-Data Structures & Algorithms (BFS, A*)
+📉 Achieved approximately **60% reduction in node exploration** using A* compared to BFS  
 
-✅ What I improved
+---
 
-Added bold formatting → makes it easier to scan
+## 🛠️ Tech Stack
 
-Fixed small wording: “compared to BFS” > “vs BFS” (more formal)
+- **Python**
+- **Pygame**
+- **Data Structures & Algorithms**
+  - BFS (Queue - `deque`)
+  - A* (Priority Queue - `heapq`)
 
-Consistent capitalization (heuristic, A* etc.)
+---
 
-Better spacing → looks cleaner on GitHub
+
+
+---
+
+## ▶️ How to Run
+
+```bash
+pip install pygame
+python main.py
